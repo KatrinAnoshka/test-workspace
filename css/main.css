@@ -1,0 +1,236 @@
+body {
+    font-size: 1em;
+    position: relative;
+    font-family: 'ProximaNova', sans-serif;
+    overflow-x: hidden;
+    max-width: 100%;
+    min-width: 320px;
+    height: auto;
+    background-color: #f2f2f2;
+}
+img {
+    max-width: 100%;
+}
+a:hover, a:active, a:focus {
+    text-decoration: none;
+}
+a.button {
+    display: block;    
+    max-width: 100%;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: color 0.5s ease-out,background 0.5s ease-out;
+    -o-transition: color 0.5s ease-out,background 0.5s ease-out;
+    transition: color 0.5s ease-out,background 0.5s ease-out;
+}
+.tender {
+    width: 100vw;
+    height: auto;
+    background-color: #f1f1f1;
+}
+.tender__container--top {
+    border-bottom: 2px solid #d2d2d2;
+}
+.tender__title--wrap,
+.tender__links--wrap {
+  width: 1111px;
+  height: auto;
+  
+}
+
+.tender__title--wrap {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 41px auto;
+}
+.tender__title {
+    font-family: 'ProximaNova-Extrabld', sans-serif;
+  font-size: 45px;
+  color: #061e31;
+    padding-right: 155px;
+    padding-left: 26px;
+    position: relative;
+}
+
+
+.tender__title:after {
+    position: absolute;
+    content: "12";
+  font-family: 'ProximaNova', sans-serif;
+  font-size: 32px;
+  color: #5e6367;
+  top: 10px;
+    left: 217px;
+}
+.tender__text {
+  width: 772px;
+  height: 87px;
+  /*font-family: ProximaNova;*/
+  font-size: 20px;
+  line-height: 1.45;
+
+  color: #797979;
+  padding-right: 26px;
+
+}
+.tender__links--wrap {
+    margin: 97px auto 0;
+    padding-left: 26px;
+} 
+.tender__links {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+   
+}
+.tender__link {
+  /*font-family: ProximaNova;*/
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.06;
+  color: #16b1ef;
+    margin-right: 29px;
+    padding-bottom: 7px;
+    margin-bottom: -2px;
+}
+.tender__link:hover,
+.tender__link--active {
+    color: #2a2a2a;
+    border-bottom: 1.5px solid #2a2a2a;
+   padding-bottom: 7px;
+}
+.tender__link--number {
+    padding-left: 7px;
+}
+.tender__container--bottom {
+    width: 1111px;
+    margin: 35px auto 59px;
+}
+.tender__inner {
+    width: 1111px;
+  height: auto;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 6px 13px 0 rgba(0, 0, 0, 0.06);
+          box-shadow: 0 6px 13px 0 rgba(0, 0, 0, 0.06);
+  background-color: #ffffff;
+  padding: 14px 24px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30px 124px 244px 206px 211px 139px 106px;
+      grid-template-columns: 30px 124px 244px 206px 211px 139px 106px; 
+}
+.grid__item {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.grid__item--cell,
+.grid__item--cell-last {
+    height: 90px;
+    
+}
+.grid__item--cell {
+    border-bottom: 1px solid #d8d8d8;
+}
+.tender__inner--title {
+    /*font-family: ProximaNova;*/
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.57;
+  letter-spacing: 0.6px;
+  color: #aaaeb3;
+  text-transform: uppercase;
+  padding-bottom: 24px;
+}
+.tender__inner--first {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+  -ms-grid-column-span: 2;
+  grid-column-end: 3;
+ } 
+.tender__icon--wrap {
+    width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  background-color: #0682fe;
+  position: relative;
+}
+.tender__icon--img {
+    width: 19px;
+    height: 16px;
+    /* padding-top: 10px; */
+    position: absolute;
+    top: 7px;
+    left: 6px;
+}
+.tender__agency {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.tender__agency--title {
+    /*font-family: ProximaNova;*/
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.1;
+  letter-spacing: normal;
+  color: #292929;
+    margin-right: 7px;
+  border-bottom: solid 1px #c1c1c1;
+  
+}
+.tender__agency--title:hover {
+    border-bottom: solid 1px transparent;
+}
+.tender__agency--wrap .pro__badge {
+    display: none;
+}
+.tender__agency--wrap.tender__agency--wrap-pro .pro__badge {
+    
+    width: 36px;
+    height: 19px;
+    background-color: #fdb815;
+    /*font-family: ProximaNova;*/
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.46;
+    letter-spacing: 0.5px;
+    color: #2a2a2a;
+    text-transform: uppercase;
+    display: block;
+    /*position: absolute;*/
+    text-align: center;
+    padding-top: 1px;
+    margin-bottom: 17px;
+}
+.tender__city,
+.tender__projects,
+.tender__years {
+    /*font-family: ProximaNova;*/
+  font-size: 20px;
+  line-height: 1.1;
+  color: #292929;
+}
+.tender__price--filled {
+    fill: #000;
+}
+
+
+
+
+
