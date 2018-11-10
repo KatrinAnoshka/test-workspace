@@ -132,7 +132,10 @@ a:hover, a:active, a:focus {
     letter-spacing: 0.6px;
     color: #aaaeb3;
     text-transform: uppercase;
-    padding-bottom: 24px;
+    padding-bottom: 9px;
+}
+.tender__arrow--link {
+    color: #aaaeb3;
 }
 .tender__inner--first {
     -ms-grid-column: 1;
@@ -140,19 +143,46 @@ a:hover, a:active, a:focus {
     -ms-grid-column-span: 2;
     grid-column-end: 3;
  } 
-.tender__icon--wrap {
+.tender__arrow {
+    padding-left: 4px;
+    padding-bottom: 2px;
+} 
+.tender__checkbox {
+    -webkit-appearance: checkbox;
     width: 30px;
     height: 30px;
     border-radius: 4px;
     background-color: #0682fe;
     position: relative;
 }
-.tender__icon--img {
-    width: 19px;
-    height: 16px;
+label input {
+    display: none;
+}
+label span {
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 2px solid #0682fe;
+    display: inline-block;
+    position: relative;
+    background-color: #FFF;
+    border-radius: 4px;
+    padding: 3px;
+}
+[type=checkbox]:checked + span:before {
+    content: '\2713';
     position: absolute;
-    top: 7px;
-    left: 6px;
+    top: -1px;
+    left: -1px;
+    font-size: 27px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 1.2;
+    background: #0682fe;
+    text-align: center;
+    width: 27px;
+    height: 27px;
 }
 .tender__agency {
     -webkit-box-pack: center;
@@ -201,6 +231,13 @@ a:hover, a:active, a:focus {
 }
 
 
-
+/*.tender__inner:last-child {
+    border-bottom-right-radius: 6px!important;
+    border-bottom-left-radius: 6px!important;
+}
+.tender__inner:last-child .grid__item--cell{
+    border-bottom: none;
+}
+*/
 
 
